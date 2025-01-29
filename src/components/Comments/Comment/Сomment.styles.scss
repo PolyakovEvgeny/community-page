@@ -1,0 +1,24 @@
+@use "../../../styles/variables.scss" as * ;
+
+.Comment {
+  margin-bottom: $gap-md;
+  background-color: var(--color-comment-background);
+  padding: $gap-sm;
+  border-radius: $border-radius-xs;
+}
+
+.Comment p {
+  margin: 0;
+}
+
+.CommentWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: $gap-md;
+}
+
+.Comments {
+  margin-top: $gap-md;
+  padding-top: $gap-sm;
+  border-top: 2px solid var(--color-card-border);
+}

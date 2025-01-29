@@ -1,0 +1,33 @@
+@mixin light-mode {
+  //common colors
+  --color-black: black;
+  --color-white: white;
+
+  //primary colors
+  --color-primary: #2196f3;
+  --color-primary-light: #4dabf5;
+  --color-primary-dark: #1769aa;
+
+  //secondary colors
+  --color-secondary: #b388ff;
+  --color-secondary-light: #c29fff;
+  --color-secondary-dark: #7d5fb2;
+
+  //background colors
+  --color-common-background: #d7d7d7;
+  --color-card-background: #f9f9f9;
+  --color-comment-background: #f0f0f0;
+
+  //text colors
+  --color-text: var(--color-black);
+
+  //border colors
+  --color-comment-border: #b3b3b3;
+  --color-card-border: #ddd;
+
+  //shadow colors
+  --color-card-shadow: #0000001A;
+
+  //date colors
+  --color-date: #757575;
+}

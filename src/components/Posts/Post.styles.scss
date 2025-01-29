@@ -1,0 +1,19 @@
+.ButtonContainer {
+  text-align: right;
+}
+
+.TitleBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PostDate {
+  font-size: 14px;
+  color: var(--color-date);
+}
+
+.ShowCommentsButtonBlock {
+  display: flex;
+  justify-content: center;
+}

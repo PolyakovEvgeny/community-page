@@ -1,0 +1,15 @@
+@use "../../../styles/variables.scss" as * ;
+
+.Textarea {
+  width: 100%;
+  padding: $gap-sm;
+  margin-bottom: $gap-sm;
+  font-size: 14px;
+  border: 1px solid var(--color-card-border);
+  border-radius: $border-radius-xs;
+  resize: none;
+  min-height: 1.5em;
+  max-height: 10em;
+  overflow: hidden;
+  display: flex;
+}

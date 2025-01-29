@@ -1,0 +1,34 @@
+@use "./theme.scss" as * ;
+@use "./variables.scss" as * ;
+
+:root {
+  @include light-mode;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+#root {
+  width: 100%;
+  background-color: var(--color-common-background);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+@media (max-width: $width-mobile) {
+  h1 {
+    font-size: 2em;
+    line-height: 1;
+  }
+}

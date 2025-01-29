@@ -1,0 +1,12 @@
+@use '../../styles/variables.scss' as * ;
+
+.TextareaWrapper {
+  display: flex;
+}
+
+@media (max-width: $width-mobile) {
+  .PostForm {
+    display: flex;
+    flex-direction: column;
+  }
+}

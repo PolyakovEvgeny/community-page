@@ -1,0 +1,13 @@
+@use '../../../styles/variables.scss' as * ;
+
+.Container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $gap-md;
+}
+
+@media (max-width: $width-mobile) {
+  .Container {
+    padding: 0;
+  }
+}

@@ -1,0 +1,41 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "tsconfig.app.json",
+        "sourceType": "module"
+    },
+    "root": true,
+    "env": {
+        "node": true,
+        "jest": true,
+        "es2022": true,
+        "browser": true,
+        "shelljs": true
+    },
+    "overrides": [
+        {
+            "files": ["src/**/*.ts", "src/**/*.tsx"],
+            "extends": [
+                "eslint:recommended",
+                "plugin:@typescript-eslint/recommended",
+                "prettier"
+            ],
+            "plugins": [
+                "@typescript-eslint",
+                "react-hooks",
+                "react-refresh"
+            ],
+            "parserOptions": {
+                "project": ["./tsconfig.app.json"],
+                "sourceType": "module"
+            },
+            "rules": {
+                "@typescript-eslint/no-floating-promises": "error",
+                "@typescript-eslint/explicit-member-accessibility": "error",
+                "require-await": ["error"],
+                "object-shorthand": ["error", "always"],
+                "no-console": "error"
+            }
+        }
+    ]
+}

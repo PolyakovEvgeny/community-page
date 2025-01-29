@@ -1,50 +1,85 @@
-# React + TypeScript + Vite
+# Community Page (Frontend Only)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This application is a frontend community page where users can create posts, comment on them, and add nested comments. All the data is generated from mock data, and the project doesn't require a backend connection.
 
-Currently, two official plugins are available:
+## Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React with TypeScript** — used for creating components and typing data.
+- **SCSS** — for styling and ensuring modularity.
+- **Vite** — used as the build tool for fast development.
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone the repository:
+   ```bash
+   git clone https://gitlab.com/Evgeny_ts/community-page.git
+2. Navigate to the project directory:
 
-- Configure the top-level `parserOptions` property like this:
+    ```bash
+    cd community-page
+3. Install dependencies:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+    ```bash
+    npm install
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Running the Project
+1. To run the project in development mode, use the following command:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+    ```bash
+    npm run dev
+   
+The project will be available at http://localhost:5173.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Project File Structure
+`src/components` — React components (e.g., `Post`, `Comment`, and others).
+
+`src/hooks` — Custom hooks for managing state.
+
+`src/styles` — SCSS styles for modularity.
+
+`src/data` — Mock data for posts and comments.
+
+`src/utils` — Utility functions and helpers.
+
+`src/app/App.tsx` — The main application component.
+
+
+## Libraries Used
+**React** — a library for building user interfaces.
+
+**TypeScript** — for strict typing.
+
+**SCSS** — for styling.
+
+**bootstrap-icons** - for icons
+
+**moment** - for date format
+
+
+## Linting and Code Style
+ESLint is used to enforce code style with rules for React and TypeScript.
+
+1. To run the linter:
+
+   ```bash
+   npm run lint
+
+## Build
+1. To build the project for production use:
+
+   ```bash
+   npm run build
+   
+## Deployment
+1. To preview the production build, use the following command:
+
+   ```bash
+   npm run preview
+   
+## Important Notes
+- All data is generated from mock data.
+- The project does not use a backend.
+- The code is written following best practices in React, TypeScript, and SCSS.
+
+## License
+This project is licensed under the MIT License.

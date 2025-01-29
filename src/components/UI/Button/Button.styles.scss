@@ -1,0 +1,48 @@
+@use "../../../styles/variables.scss" as * ;
+
+.Button {
+  border: none;
+  cursor: pointer;
+  border-radius: $border-radius-xs;
+  transition: background-color 0.3s;
+  margin-bottom: $gap-sm;
+
+  &__primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    &:hover {
+      background-color: var(--color-primary-light);
+    }
+    &:active, &:focus-visible {
+      background-color: var(--color-primary-dark);
+    }
+  }
+
+  &__secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    &:hover {
+      background-color: var(--color-secondary-light);
+    }
+    &:active, &:focus-visible {
+      background-color: var(--color-secondary-dark);
+    }
+  }
+
+  &__small {
+    font-size: 14px;
+    padding: $gap-xs $gap-sm;
+  }
+
+  &__medium {
+    font-size: 14px;
+    padding: $gap-sm $gap-md;
+  }
+
+  &__large {
+    font-size: 16px;
+    padding: $gap-md $gap-lg;
+  }
+}
+
+

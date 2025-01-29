@@ -1,0 +1,16 @@
+@use '../../styles/variables.scss' as * ;
+
+.CommentForm {
+  padding-left: $gap-md;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: $gap-sm;
+}
+
+@media (max-width: $width-mobile) {
+  .CommentForm {
+    padding-left: 0;
+  }
+}
