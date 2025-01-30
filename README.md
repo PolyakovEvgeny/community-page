@@ -12,7 +12,7 @@ This application is a frontend community page where users can create posts, comm
 
 1. Clone the repository:
    ```bash
-   git clone https://gitlab.com/Evgeny_ts/community-page.git
+   git clone https://github.com/PolyakovEvgeny/community-page.git
 2. Navigate to the project directory:
 
     ```bash
@@ -52,8 +52,6 @@ The project will be available at http://localhost:5173.
 **SCSS** — for styling.
 
 **bootstrap-icons** - for icons
-
-**moment** - for date format
 
 
 ## Linting and Code Style
